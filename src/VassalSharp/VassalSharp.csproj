@@ -1,0 +1,170 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bsh\**" />
+    <Compile Remove="build\**" />
+    <Compile Remove="chat\**" />
+    <Compile Remove="command\**" />
+    <Compile Remove="configure\**" />
+    <Compile Remove="counters\**" />
+    <Compile Remove="i18n\**" />
+    <Compile Remove="icons\**" />
+    <Compile Remove="images\**" />
+    <Compile Remove="preferences\**" />
+    <Compile Remove="property\**" />
+    <Compile Remove="script\**" />
+    <Compile Remove="tools\**" />
+    <EmbeddedResource Remove="bsh\**" />
+    <EmbeddedResource Remove="build\**" />
+    <EmbeddedResource Remove="chat\**" />
+    <EmbeddedResource Remove="command\**" />
+    <EmbeddedResource Remove="configure\**" />
+    <EmbeddedResource Remove="counters\**" />
+    <EmbeddedResource Remove="i18n\**" />
+    <EmbeddedResource Remove="icons\**" />
+    <EmbeddedResource Remove="images\**" />
+    <EmbeddedResource Remove="preferences\**" />
+    <EmbeddedResource Remove="property\**" />
+    <EmbeddedResource Remove="script\**" />
+    <EmbeddedResource Remove="tools\**" />
+    <None Remove="bsh\**" />
+    <None Remove="build\**" />
+    <None Remove="chat\**" />
+    <None Remove="command\**" />
+    <None Remove="configure\**" />
+    <None Remove="counters\**" />
+    <None Remove="i18n\**" />
+    <None Remove="icons\**" />
+    <None Remove="images\**" />
+    <None Remove="preferences\**" />
+    <None Remove="property\**" />
+    <None Remove="script\**" />
+    <None Remove="tools\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="launch\AboutVASSALAction.cs" />
+    <Compile Remove="launch\AbstractLaunchAction.cs" />
+    <Compile Remove="launch\BasicModule.cs" />
+    <Compile Remove="launch\Command.cs" />
+    <Compile Remove="launch\CommandClient.cs" />
+    <Compile Remove="launch\CommandServer.cs" />
+    <Compile Remove="launch\CreateModuleAction.cs" />
+    <Compile Remove="launch\EditExtensionAction.cs" />
+    <Compile Remove="launch\EditModuleAction.cs" />
+    <Compile Remove="launch\Editor.cs" />
+    <Compile Remove="launch\EditorWindow.cs" />
+    <Compile Remove="launch\ExceptionHandler.cs" />
+    <Compile Remove="launch\ExtensionEditorWindow.cs" />
+    <Compile Remove="launch\FirstTimeDialog.cs" />
+    <Compile Remove="launch\GameModuleAction.cs" />
+    <Compile Remove="launch\Launcher.cs" />
+    <Compile Remove="launch\LaunchTourAction.cs" />
+    <Compile Remove="launch\LoadModuleAction.cs" />
+    <Compile Remove="launch\MacOSXStartUp.cs" />
+    <Compile Remove="launch\Main.cs" />
+    <Compile Remove="launch\ModuleEditorWindow.cs" />
+    <Compile Remove="launch\ModuleManagerMacOSXStartUp.cs" />
+    <Compile Remove="launch\NewExtensionAction.cs" />
+    <Compile Remove="launch\Player.cs" />
+    <Compile Remove="launch\PlayerWindow.cs" />
+    <Compile Remove="launch\SaveModuleAction.cs" />
+    <Compile Remove="launch\SaveModuleAsAction.cs" />
+    <Compile Remove="launch\ShutDownAction.cs" />
+    <Compile Remove="launch\StartUp.cs" />
+    <Compile Remove="launch\TileProgressPump.cs" />
+    <Compile Remove="launch\TileProgressPumpStateMachine.cs" />
+    <Compile Remove="launch\TilingHandler.cs" />
+    <Compile Remove="launch\UpdateCheckRequest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="build\AbstractBuildable.cs" />
+    <Compile Include="build\AbstractConfigurable.cs" />
+    <Compile Include="build\AutoConfigurable.cs" />
+    <Compile Include="build\Buildable.cs" />
+    <Compile Include="build\Builder.cs" />
+    <Compile Include="build\Configurable.cs" />
+    <Compile Include="build\GameModule.cs" />
+    <Compile Include="build\GpIdSupport.cs" />
+    <Compile Include="build\module\documentation\DialogHelpWindow.cs" />
+    <Compile Include="build\module\documentation\HelpFile.cs" />
+    <Compile Include="build\module\documentation\HelpWindow.cs" />
+    <Compile Include="build\module\metadata\AbstractMetaData.cs" />
+    <Compile Include="build\module\metadata\ExtensionMetaData.cs" />
+    <Compile Include="build\module\metadata\MetaDataFactory.cs" />
+    <Compile Include="build\module\metadata\ModuleMetaData.cs" />
+    <Compile Include="build\module\metadata\SaveMetaData.cs" />
+    <Compile Include="build\module\ModuleExtension.cs" />
+    <Compile Include="build\module\properties\ChangePropertyCommand.cs" />
+    <Compile Include="build\module\properties\MutablePropertiesContainer.cs" />
+    <Compile Include="build\module\properties\MutableProperty.cs" />
+    <Compile Include="build\module\properties\PropertyNameSource.cs" />
+    <Compile Include="build\module\properties\PropertySource.cs" />
+    <Compile Include="command\Command.cs" />
+    <Compile Include="command\CommandEncoder.cs" />
+    <Compile Include="command\NullCommand.cs" />
+    <Compile Include="configure\AutoConfigurer.cs" />
+    <Compile Include="configure\Configurer.cs" />
+    <Compile Include="configure\ConfigurerFactory.cs" />
+    <Compile Include="configure\IntConfigurer.cs" />
+    <Compile Include="configure\LongConfigurer.cs" />
+    <Compile Include="configure\SingleChildInstance.cs" />
+    <Compile Include="configure\StringConfigurer.cs" />
+    <Compile Include="configure\ValidationReport.cs" />
+    <Compile Include="configure\ValidityChecker.cs" />
+    <Compile Include="configure\VisibilityCondition.cs" />
+    <Compile Include="counters\EditablePiece.cs" />
+    <Compile Include="counters\GamePiece.cs" />
+    <Compile Include="counters\PieceEditor.cs" />
+    <Compile Include="i18n\ComponentI18nData.cs" />
+    <Compile Include="i18n\Language.cs" />
+    <Compile Include="i18n\Localization.cs" />
+    <Compile Include="i18n\PieceI18nData.cs" />
+    <Compile Include="i18n\Resources.cs" />
+    <Compile Include="i18n\Translatable.cs" />
+    <Compile Include="i18n\TranslatableAttribute.cs" />
+    <Compile Include="i18n\TranslatableConfigurerFactory.cs" />
+    <Compile Include="i18n\TranslatablePiece.cs" />
+    <Compile Include="i18n\Translation.cs" />
+    <Compile Include="preferences\Prefs.cs" />
+    <Compile Include="tools\ActionListener.cs" />
+    <Compile Include="tools\ArchiveWriter.cs" />
+    <Compile Include="tools\DataArchive.cs" />
+    <Compile Include="tools\ImageSource.cs" />
+    <Compile Include="tools\image\ImageTileSource.cs" />
+    <Compile Include="tools\io\File.cs" />
+    <Compile Include="tools\io\FileArchive.cs" />
+    <Compile Include="tools\io\IOUtils.cs" />
+    <Compile Include="tools\io\ZipArchive.cs" />
+    <Compile Include="tools\io\ZipEntry.cs" />
+    <Compile Include="tools\io\ZipFile.cs" />
+    <Compile Include="tools\KeyStroke.cs" />
+    <Compile Include="tools\KeyStrokeListener.cs" />
+    <Compile Include="tools\KeyStrokeSource.cs" />
+    <Compile Include="tools\NamedKeyManager.cs" />
+    <Compile Include="tools\NamedKeyStroke.cs" />
+    <Compile Include="tools\NamedKeyStrokeListener.cs" />
+    <Compile Include="tools\ReadErrorDialog.cs" />
+    <Compile Include="tools\ToolBarComponent.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="build\module\documentation\HelpWindow.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
